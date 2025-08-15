@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Narges’ Birthday Weekend — Choose Your Own Adventure</title>
+<style>
+  :root{
+    --bg:#0b1220; --card:#0f172a; --muted:#94a3b8; --text:#e5e7eb;
+    --accent:#60a5fa; --accent2:#f59e0b; --stroke:#1f2a44;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    background: radial-gradient(1200px 700px at 20% 0%, #0c1630, #0b1220);
+    color:var(--text); line-height:1.5; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+  .container{max-width:980px; margin:0 auto; padding:24px;}
+  .hero{position:relative; border-radius:20px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.35); background:#0b1220;}
+  .hero img{width:100%; height:360px; object-fit:cover; filter:contrast(1.05) saturate(1.05) brightness(.85); display:block}
+  .hero .overlay{position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.55));}
+  .hero .content{position:absolute; left:0; right:0; bottom:0; padding:28px 28px 24px;}
+  .eyebrow{letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-size:.8rem}
+  h1{margin:.25rem 0 0; font-size:clamp(1.6rem,3.2vw,2.25rem); line-height:1.15}
+  .tagline{color:#cbd5e1; margin:.5rem 0 0; font-size:1rem}
+  .top-links{margin:10px 6px 0; font-size:.95rem; color:#cbd5e1}
+  .top-links a{margin-right:14px}
+  .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px; margin-top:24px;}
+  .card{grid-column:span 12; background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)); border:1px solid var(--stroke); border-radius:18px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.25);}
+  .card .media{position:relative; height:220px; overflow:hidden; background:#0a0f1e;}
+  .card .media img{width:100%; height:100%; object-fit:cover; display:block}
+  .label{position:absolute; top:12px; left:12px; background:rgba(15,23,42,.75); backdrop-filter:blur(6px); border:1px solid rgba(148,163,184,.25); color:#e2e8f0; font-size:.78rem; padding:6px 10px; border-radius:999px;}
+  .content{padding:18px 18px 16px;}
+  h2{margin:2px 0 6px; font-size:1.1rem}
+  p{margin:0 0 10px; color:#dbe2ea}
+  .actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:8px}
+  .btn{display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--stroke); background:linear-gradient(180deg, rgba(96,165,250,.15), rgba(96,165,250,.05)); color:#eaf2ff; font-weight:600;}
+  .btn.secondary{background:linear-gradient(180deg, rgba(148,163,184,.12), rgba(148,163,184,.04)); color:#e2e8f0;}
+  .section-title{margin:26px 6px 8px; font-size:1.15rem; color:#e2e8f0;}
+  .kicker{color:var(--muted); font-size:.92rem; margin:2px 6px 14px}
+  .two-col{grid-column:span 12}
+  @media(min-width:860px){ .two-col{grid-column:span 6} }
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4?q=80&w=1600&auto=format&fit=crop" alt="Romantic river view near New Hope at dusk" />
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="eyebrow">New Hope, Pennsylvania</div>
+        <h1>Narges’ Birthday Weekend — Choose Your Own Adventure</h1>
+        <div class="tagline">Romantic dining • Live music • Antiques &amp; Golden Nugget • Brunch • A little mystery • A little rope</div>
+      </div>
+    </section>
+
+    <!-- Quick jump links -->
+    <div class="top-links">
+      Jump to:
+      <a href="#friday">Friday</a>
+      <a href="#saturday">Saturday</a>
+      <a href="#sunday">Sunday</a>
+      <a href="#wear">What to Wear</a>
+      <a href="#next">Next Steps</a>
+    </div>
+
+    <!-- FRIDAY NIGHT -->
+    <h2 id="friday" class="section-title">Friday Night — Dinner &amp; Live Music</h2>
+    <p class="kicker">Pick a dinner vibe, then glide into live music. If we stay at Odette’s, we get guest-only rooftop lounge access.</p>
+
+    <div class="grid">
+      <!-- Nektar -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Top Pick</span>
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1600&auto=format&fit=crop" alt="Tapas and wine on a candlelit table" />
+        </div>
+        <div class="content">
+          <h2>Nektar — Small Plates &amp; Wine</h2>
+          <p>Intimate wine &amp; whiskey bar with <strong>shareable small plates</strong>. Cozy, low-lit, and perfect for a romantic start.</p>
+          <div class="actions">
+            <a class="btn" href="http://nektarnewhope.com" target="_blank" rel="noopener">Nektar Website</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Zoubi -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Top Pick</span>
+          <img src="https://images.unsplash.com/photo-1559339352-0d87f1f9b455?q=80&w=1600&auto=format&fit=crop" alt="Mediterranean courtyard dinner setting" />
+        </div>
+        <div class="content">
+          <h2>Zoubi — French–Mediterranean</h2>
+          <p>Elegant <strong>courtyard dining</strong> with European flair. Flavor-forward plates with a romantic, tucked-away vibe.</p>
+          <div class="actions">
+            <a class="btn" href="https://zoubirestaurant.com" target="_blank" rel="noopener">Zoubi Website</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Odette's -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Alternate Elegant</span>
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop" alt="Elegant dining room with river-inspired palette" />
+        </div>
+        <div class="content">
+          <h2>River House at Odette’s — Elevated &amp; Scenic</h2>
+          <p>Upscale seafood &amp; steak with river views. <strong>Stay overnight</strong> to enjoy guest-only <strong>rooftop lounge</strong> access for nightcaps under the stars.</p>
+          <div class="actions">
+            <a class="btn" href="https://www.riverhousenewhope.com" target="_blank" rel="noopener">Odette’s Website</a>
+            <a class="btn secondary" href="https://www.riverhousenewhope.com/" target="_blank" rel="noopener">Check Rooms</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Live Music -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">After Dinner</span>
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1600&auto=format&fit=crop" alt="Live band on stage with moody lights" />
+        </div>
+        <div class="content">
+          <h2>Live Music Options</h2>
+          <p>Slide into a set at <strong>Triumph Brewing Co.</strong> or the intimate icon <strong>John &amp; Peter’s</strong>—both walkable from dinner.</p>
+          <div class="actions">
+            <a class="btn secondary" href="https://www.triumphbrewing.com/new-hope/" target="_blank" rel="noopener">Triumph New Hope</a>
+            <a class="btn secondary" href="https://www.johnandpeters.com/" target="_blank" rel="noopener">John &amp; Peter’s</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SATURDAY -->
+    <h2 id="saturday" class="section-title">Saturday — Coffee, Antiques &amp; Brunch</h2>
+    <p class="kicker">Slow morning, treasure hunt, then a whimsical brunch.</p>
+
+    <div class="grid">
+      <!-- Meta Cafe -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Start</span>
+          <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1600&auto=format&fit=crop" alt="Latte art in the morning sun" />
+        </div>
+        <div class="content">
+          <h2>Meta Café — Morning Coffee</h2>
+          <p>Craft coffee and light bites to ease into the day.</p>
+        </div>
+      </article>
+
+      <!-- Antiques Walk -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Explore</span>
+          <img src="https://images.unsplash.com/photo-1465353470154-cb4b76e0d8f2?q=80&w=1600&auto=format&fit=crop" alt="Charming antique shop window" />
+        </div>
+        <div class="content">
+          <h2>Walking Tour of Antiques</h2>
+          <p>New Hope shops → stroll the bridge to Lambertville → hunt for finds at <strong>Golden Nugget Antique Flea Market</strong>.</p>
+          <div class="actions">
+            <a class="btn secondary" href="https://www.gnaflea.com/" target="_blank" rel="noopener">Golden Nugget Info</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Under the Moon -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Brunch</span>
+          <img src="https://images.unsplash.com/photo-1540914124281-342587941389?q=80&w=1600&auto=format&fit=crop" alt="Brunch table with colorful Mediterranean plates" />
+        </div>
+        <div class="content">
+          <h2>Under the Moon — Whimsical Brunch</h2>
+          <p>Latin &amp; Mediterranean-inspired plates with a playful, eclectic vibe.</p>
+          <div class="actions">
+            <a class="btn" href="https://underthemooncafe.com/menu/" target="_blank" rel="noopener">View Menu</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Murder Mystery -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Evening</span>
+          <img src="https://images.unsplash.com/photo-1520975922203-b7496ef0ae54?q=80&w=1600&auto=format&fit=crop" alt="Historic fort corridor at dusk" />
+        </div>
+        <div class="content">
+          <h2>Murder Mystery at Fort Delaware (5–8 PM)</h2>
+          <p>Immersive evening of history and intrigue at <strong>Fort Delaware State Park</strong> in Delaware City, DE.</p>
+          <div class="actions">
+            <a class="btn" href="https://destateparks.com/History/FortDelaware" target="_blank" rel="noopener">Event Info &amp; Tickets</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- SUNDAY -->
+    <h2 id="sunday" class="section-title">Sunday — Slow &amp; Intimate</h2>
+    <p class="kicker">Easy brunch, then a private lesson to close the weekend with intention.</p>
+
+    <div class="grid">
+      <!-- Brunch near Bound Studio -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Morning</span>
+          <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=1600&auto=format&fit=crop" alt="Cozy brunch nook with sunlight" />
+        </div>
+        <div class="content">
+          <h2>Brunch near Bound Studio</h2>
+          <p>Pick a nearby favorite for a slow start. We’ll choose based on where we end up.</p>
+        </div>
+      </article>
+
+      <!-- Shibari Lesson -->
+      <article class="card two-col">
+        <div class="media">
+          <span class="label">Afternoon (3–5 PM)</span>
+          <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600&auto=format&fit=crop" alt="Soft-lit studio with elegant rope" />
+        </div>
+        <div class="content">
+          <h2>Private Shibari Lesson</h2>
+          <p>An intimate, creative finale to wrap the weekend—focused on connection, communication, and safety.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- WHAT TO WEAR -->
+    <h2 id="wear" class="section-title">What to Wear</h2>
+    <div class="grid">
+      <article class="card two-col">
+        <div class="content">
+          <h2>Friday Evening – Dress Up</h2>
+          <p>Suggested attire: elegant and romantic. Think a flowing dress—something that feels celebratory.</p>
+        </div>
+      </article>
+      <article class="card two-col">
+        <div class="content">
+          <h2>Saturday – Comfortable Casual</h2>
+          <p>Enjoy cozy comfort for walking and browsing—yoga-inspired layers, soft separates, or relaxed weekend chic.</p>
+        </div>
+      </article>
+      <article class="card two-col">
+        <div class="content">
+          <h2>Sunday Shibari Lesson – Studio-Recommended</h2>
+          <p>Wear comfortable, stretchy clothing (yoga, athleisure, gym attire). Avoid jeans. If being tied (“bunny”), consider shorts and a tank—the rope works best directly on skin.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- NEXT STEPS -->
+    <h2 id="next" class="section-title">Next Steps</h2>
+    <div class="grid">
+      <article class="card" style="grid-column:span 12">
+        <div class="content">
+          <p>• Choose Friday dinner: <strong>Nektar</strong> / <strong>Zoubi</strong> + music <em>or</em> <strong>Odette’s</strong> with rooftop access.</p>
+          <p>• Consider booking a room at <strong>Odette’s</strong> for guest-only rooftop lounge access.</p>
+          <p>• Reserve brunch &amp; secure murder mystery tickets.</p>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</body>
+</html>
